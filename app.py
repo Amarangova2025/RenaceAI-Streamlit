@@ -27,9 +27,8 @@ if st.button("🔍 Analizar emoción"):
     if texto_usuario.strip() == "":
         st.warning("Por favor, escribe algo antes de analizar.")
     else:# Transformar el texto con el vectorizer antes de predecir
-texto_vectorizado = vectorizer.transform([texto_usuario])
-emocion_detectada = modelo.predict(texto_vectorizado)[0]
-
+        texto_vectorizado = vectorizer.transform([texto_usuario])
+        emocion_detectada = modelo.predict(texto_vectorizado)[0]
         st.success(f"🧠 Emoción detectada: **{emocion_detectada.capitalize()}**")
         respuesta = respuestas_empaticas.get(emocion_detectada.lower(),
                     "Estamos aquí para ti. 💜 Cada emoción es válida y merece atención.")
