@@ -19,4 +19,4 @@ if frase:
     vector = vectorizer.transform([frase])
     emocion = modelo.predict(vector)[0]
     st.success(f"✨ Emoción detectada: **{emocion.upper()}**")
-    st.balloons()
+    st.hearts()
