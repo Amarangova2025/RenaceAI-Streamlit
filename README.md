@@ -1,50 +1,35 @@
-# 🌈 Renace AI – Asistente Emocional
+# Renace AI 💖
 
-Renace AI es un asistente emocional desarrollado con inteligencia artificial capaz de detectar emociones a partir de frases escritas por el usuario. Su propósito es brindar acompañamiento y respuestas empáticas a quienes atraviesan momentos difíciles.
+Renace AI es una aplicación desarrollada con Streamlit que permite detectar emociones en textos escritos por el usuario y entregar respuestas empáticas automáticamente.
 
-## 🎯 ¿Qué hace esta aplicación?
+## 🚀 ¿Cómo funciona?
 
-- Detecta emociones como **ansiedad**, **culpa**, **confusión** y **tristeza**
-- Responde con un mensaje empático según la emoción detectada
-- Funciona en la nube a través de [Streamlit Cloud](https://streamlit.io/cloud)
+1. El usuario escribe lo que está sintiendo.
+2. El modelo de Machine Learning predice una emoción.
+3. Se muestra una respuesta empática para acompañar al usuario.
 
-## 🔗 Demo en vivo
+## 🧠 Emociones detectadas:
+- Ansiedad
+- Culpa
+- Tristeza
+- Confusión
 
-Accede y prueba tu emoción aquí:  
-👉 **[renaceai-app.streamlit.app](https://renaceai-app-bvtbd75vbrfxztqm2pqq8h.streamlit.app/)**
+## 💬 Respuestas empáticas:
+Se entrega una frase compasiva dependiendo de la emoción detectada.
 
-## 🧠 Tecnologías utilizadas
+## 🛠️ Uso en local
 
-- Python
-- scikit-learn
-- joblib
-- pandas
-- Streamlit
-
-## 🛠️ Cómo usarlo
-
-1. Clona este repositorio
-2. Instala las dependencias:
-
+1. Asegúrate de tener `streamlit` y `joblib` instalados:
 ```bash
-pip install -r requirements.txt
+pip install streamlit joblib
 ```
 
-3. Ejecuta la app:
-
+2. Ejecuta la app con:
 ```bash
 streamlit run app.py
 ```
 
-## 💬 Ejemplo de uso
+3. Asegúrate de tener `modelo_entrenado.pkl` en la misma carpeta.
 
-```
-Usuario: Hoy siento que todo está en mi contra.
-Renace AI: Emoción detectada → Confusión
-Respuesta: Está bien no tener todas las respuestas aún. Tómate tu tiempo. 🌫️
-```
-
-## 💌 Autora
-
-Creado por **Angélica M. Arango Valencia**  
-*"Renace AI fue diseñado para ayudarte a sanar y recordarte que no estás sola/o."*
+## 🌐 Demo en línea
+[Renace AI App en Streamlit](https://renaceai-app-bvtbd75vbrfxztqm2pqq8h.streamlit.app/)
