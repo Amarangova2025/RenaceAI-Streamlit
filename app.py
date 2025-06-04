@@ -27,6 +27,7 @@ if st.button("🔍 Analizar emoción"):
     if texto_usuario.strip() == "":
         st.warning("Por favor, escribe algo antes de analizar.")
     else:# Transformar el texto con el vectorizer antes de predecir
+        vectorizer = joblib.load("vectorizer.pkl")
         texto_vectorizado = vectorizer.transform([texto_usuario])
         emocion_detectada = modelo.predict(texto_vectorizado)[0]
         st.success(f"🧠 Emoción detectada: **{emocion_detectada.capitalize()}**")
